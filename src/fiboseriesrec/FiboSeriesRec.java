@@ -11,7 +11,7 @@ public class FiboSeriesRec {
         long sTim = System.currentTimeMillis();
         long eTime = sTim - tim;
         System.out.print(eTime);
-        System.out.println(" Nanoseconds");
+        System.out.println(" Milliseconds");
     }
     public static int fib(int c,int d, int left,boolean bo){
         if(bo){
