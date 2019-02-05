@@ -5,8 +5,13 @@ public class FiboSeriesRec {
     public static void main(String[] args) {
         Scanner a = new Scanner(System.in);
         System.out.println("How many numbes do you want calculated?");
-        int b = fib(0,1,a.nextInt(),true);
-        
+        int fi = a.nextInt();
+        long tim = System.currentTimeMillis();
+        int b = fib(0,1,fi,true);
+        long sTim = System.currentTimeMillis();
+        long eTime = sTim - tim;
+        System.out.print(eTime);
+        System.out.println(" Nanoseconds");
     }
     public static int fib(int c,int d, int left,boolean bo){
         if(bo){
